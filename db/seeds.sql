@@ -1,5 +1,5 @@
 --assigned values to department names
-INSERT INTO departments (department_name )
+INSERT INTO Department (department_name )
 VALUES ("Engineering"),
        ("Finance"),
        ("Legal"),
