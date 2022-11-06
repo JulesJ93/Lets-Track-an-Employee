@@ -5,8 +5,7 @@ USE EmployeeTracker_db;
 
 CREATE TABLE departments (
   id INT PRIMARY KEY,
-  department_name VARCHAR(30),
-  PRIMARY KEY (id)
+  department_name VARCHAR(30)
 );
 
 CREATE TABLE roles (
