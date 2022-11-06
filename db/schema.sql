@@ -25,4 +25,3 @@ CREATE TABLE employees (
 );
 
 
-)
