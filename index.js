@@ -1,5 +1,14 @@
 const inquirer = require('inquirer');
 const cTable = require('console.table');
+const mysql = require("mysql2");
+
+
+
+
+
+
+
+
 inquirer
   .prompt([
     {
@@ -12,3 +21,16 @@ inquirer
   .then(answers => {
     console.info('Answer:', answers.directory);
   });
+
+
+
+  //call the table for const ctable
+  console.table([
+    {
+      name: 'foo',
+      age: 10
+    }, {
+      name: 'bar',
+      age: 20
+    }
+  ]);
