@@ -4,7 +4,7 @@ inquirer
   .prompt([
     {
       name: 'faveReptile',
-      message: 'What is your favorite reptile?'
+      message: 'What would you like to do ?'
     },
   ])
   .then(answers => {
