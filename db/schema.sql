@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS registrar_db;
-CREATE DATABASE registrar_db;
+DROP DATABASE IF EXISTS EmployeeTracker_db;
+CREATE DATABASE EmployeeTracker_db;
 
-USE registrar_db;
+USE EmployeeTracker_db;
 
 CREATE TABLE instructors (
   id INT NOT NULL,
