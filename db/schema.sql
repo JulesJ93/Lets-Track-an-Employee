@@ -9,7 +9,7 @@ CREATE TABLE Department (
 );
 
 CREATE TABLE Role (
-  id INT,
+   id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
   role_title VARCHAR(30) NOT NULL,
   role_salary DECIMAL,
   order_details TEXT,
@@ -18,7 +18,7 @@ CREATE TABLE Role (
 );
 
 CREATE TABLE Employee (
-    id  INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     first_name VARCHAR (30) NOT NULL,
     last_name VARCHAR (30)  NOT NULL,
     role_id INT,
