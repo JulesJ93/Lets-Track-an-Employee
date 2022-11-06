@@ -17,6 +17,7 @@ CREATE TABLE roles (
 );
 
 CREATE TABLE employees (
+    id  INT PRIMARY KEY,
 
-    
+
 )
