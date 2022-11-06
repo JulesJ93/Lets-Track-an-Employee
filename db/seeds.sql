@@ -13,4 +13,14 @@ VALUES ("Sales Lead","100000","Sales")
        ("Account Manager","160000","Finance")
        ("Accountant","125000","Finance")
        ("Legal Team Lead","250000","Legal")
-       ("Lawyer","190000","Legal")
+       ("Lawyer","190000","Legal");
+
+INSERT INTO employees (first_name,last_name,role_id,manager_id)
+VALUES ("John","Doe","Sales Lead", "null")
+       ("Mike","Chan","Salesperson","John Doe")
+       ("Ashley","Rodriguez","Lead Engineer","null")
+       ("Kevin","Tupik","Software Engineer","Ashley Rodriguez")
+       ("Kunal","Singh","Account Manager","null")
+       ("Malia","Brown","Accountant","Kunal Singh")
+       ("Sarah","Lourd","Legal Team Lead","null")
+       ("Tom","Allen","Lawyer","Sarah Lourd");
