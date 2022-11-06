@@ -3,14 +3,14 @@ CREATE DATABASE EmployeeTracker_db;
 
 USE EmployeeTracker_db;
 
-CREATE TABLE instructors (
-  id INT NOT NULL,
-  first_name VARCHAR(30),
+CREATE TABLE department (
+  id INT PRIMARY KEY,
+  department_name VARCHAR(30),
   last_name VARCHAR(30),
   PRIMARY KEY (id)
 );
 
-CREATE TABLE courses (
+CREATE TABLE role (
   id INT,
   course_title VARCHAR(30) NOT NULL,
   instructor_id INT,
