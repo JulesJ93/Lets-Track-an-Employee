@@ -1,26 +1,26 @@
---assigned values to department names
-INSERT INTO Department (department_name )
-VALUES ("Engineering"),
-       ("Finance"),
-       ("Legal"),
-       ("Sales");
---this is the role seed       
-INSERT INTO Role (role_title,role_salary,department_id)
-VALUES ("Sales Lead",100000,"Sales")
-       ("Salesperson",80000,"Sales" )
-       ("Lead Engineer",150000,"Engineering")
-       ("Software Engineer",120000,"Engineering")
-       ("Account Manager",160000,"Finance")
-       ("Accountant",125000,"Finance")
-       ("Legal Team Lead",250000,"Legal")
-       ("Lawyer",190000,"Legal");
---this is the employee seed
-INSERT INTO employees (first_name,last_name,role_id,manager_id)
-VALUES ("John","Doe","Sales Lead", "null")
-       ("Mike","Chan","Salesperson","John Doe")
-       ("Ashley","Rodriguez","Lead Engineer","null")
-       ("Kevin","Tupik","Software Engineer","Ashley Rodriguez")
-       ("Kunal","Singh","Account Manager","null")
-       ("Malia","Brown","Accountant","Kunal Singh")
-       ("Sarah","Lourd","Legal Team Lead","null")
-       ("Tom","Allen","Lawyer","Sarah Lourd");
+INSERT INTO department (dept_name)
+VALUES 
+('Parks and Recreation'),
+('Budget and Finance'),
+('City Planning');
+
+
+INSERT INTO job (title, salary, department_id)
+VALUES 
+('Director', 75000, 1),
+('Deputy Director', 45000, 1),
+('Assistant', 18000, 1),
+('Head Auditor', 100000, 2),
+('Accountant', 80000, 2),
+('Engineer', 55000, 3),
+('Miniature Horse', 0, 1);
+
+INSERT INTO employee (first_name, last_name, job_id, manager_id)
+VALUES 
+('Ron', 'Swanson', 1, NULL),
+('Leslie', 'Knope', 2, 1),
+('April', 'Ludgate', 3, 2),
+('Chris', 'Traeger', 4, NULL),
+('Ben', 'Wyatt', 5, 4),
+('Mark', 'Brendanawicz', 6, NULL),
+('Lil', 'Sebastian', 7, NULL);
